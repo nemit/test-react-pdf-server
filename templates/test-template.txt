@@ -1,0 +1,25 @@
+const TestDoc = ({ dynamicNumber, dynamicText }) => (
+  <Document>
+    <Page style={styles.body}>
+      <Text style={styles.header} fixed>
+      ~ Created with react-pdf ~
+      </Text>
+      <Text style={styles.header}>dynamic text: "{dynamicText}"</Text>
+      <Text style={styles.header}>dynamic number: {dynamicNumber}</Text>
+    </Page>
+  </Document>
+);
+
+const styles = StyleSheet.create({
+  body: {
+    backgroundColor: 'lightblue'
+  },
+  header: {
+    fontSize: 12,
+    marginBottom: 20,
+    textAlign: 'center',
+    color: 'grey',
+  },
+});
+
+ReactPDF.render(<TestDoc %DYNAMIC_CONTENT_PROPS% />);

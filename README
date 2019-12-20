@@ -1,0 +1,13 @@
+# INSTALL #
+
+$ npm i
+
+
+# RUN #
+
+$ npm start
+
+
+# TEST SERVICE #
+
+Navigate to http://localhost:4000
